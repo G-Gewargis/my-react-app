@@ -26,6 +26,8 @@ export default function Board() {
     setXIsNext(!xIsNext);
   }
 
+  const winner = calculateWinner(squares);
+
   return (
     <>
       <div className="board-row">
